@@ -6,7 +6,7 @@
 
 .site-list__link {
   display: block;
-  padding-top: 7px;
+  padding-top: 8px;
   padding-bottom: 7px;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
@@ -17,4 +17,29 @@
   text-transform: uppercase;
 
   border-bottom: 1px solid #678fa8;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: 157px;
+  }
+
+  .site-list__link {
+    width: 153px;
+
+    padding-top: 16px;
+    padding-bottom: 15px;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    text-align: center;
+
+    border: none;
+  }
 }
