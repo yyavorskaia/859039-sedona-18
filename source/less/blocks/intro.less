@@ -1,7 +1,4 @@
 .intro {
-  padding-top: 90px;
-  padding-bottom: 83px;
-
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
@@ -9,4 +6,48 @@
 
 .intro__title {
   margin: 0;
+}
+
+.intro__invitation {
+  position: relative;
+}
+
+.intro__invitation:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 322px;
+  height: 27px;
+  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 322px 27px;
+}
+
+.intro__image {
+  display: block;
+  width: 282px;
+  height: 214px;
+
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 83px;
+}
+
+.photo-page .intro {
+  width: 100%;
+
+  background-color: #81b3d2;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-page .intro__image {
+  width: 229px;
+  height: 39px;
+
+  padding-top: 52px;
+  padding-bottom: 69px;
 }
