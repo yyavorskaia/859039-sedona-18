@@ -16,7 +16,7 @@
   content: " ";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -1px;
 
   width: 322px;
   height: 27px;
@@ -50,4 +50,30 @@
 
   padding-top: 52px;
   padding-bottom: 69px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .intro__invitation::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 770px;
+    height: 60px;
+
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-size: 770px 60px;
+  }
+
+  .intro__image {
+    width: 470px;
+    height: 350px;
+    padding-top: 75px;
+    padding-bottom: 95px;
+  }
 }
