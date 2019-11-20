@@ -11,6 +11,7 @@
 }
 
 .reason__title {
+  position: relative;
   margin: 0;
 
   font-size: 18px;
@@ -29,7 +30,11 @@
 }
 
 .reason--first {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.reason--first .reason__text {
+  padding-top: 53px;
 }
 
 .reason_image--first {
@@ -53,8 +58,16 @@
 .reason--third .reason__text,
 .reason--fourth .reason__text,
 .reason--fifth .reason__text {
-  padding: 30px 30px 30px 35px;
+  padding: 27px 35px 30px 35px;
 
   color: #000000;
   background-color: #eeeeee;
+}
+
+@media (min-width: @tablet-width) {
+  .reason--first {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
 }

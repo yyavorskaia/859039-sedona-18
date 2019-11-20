@@ -6,12 +6,12 @@
 .advantages__wrapper {
   position: relative;
 
-  padding: 45px 30px 40px 30px;
+  padding: 40px 30px 30px 32px;
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -23,4 +23,31 @@
 
   font-size: 14px;
   line-height: 26px;
+}
+
+.advantages__triangle {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    width: 495px;
+    margin: 0 auto;
+    padding: 50px 0 52px 0;
+
+    text-align: center;
+  }
+
+  .advantages__title {
+    margin-bottom: 26px;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .advantages__triangle {
+    display: none;
+  }
 }
