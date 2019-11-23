@@ -31,7 +31,7 @@
 
   .site-list__link {
     width: 154px;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 15px;
 
     font-size: 14px;
@@ -40,5 +40,15 @@
     text-align: center;
 
     border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    width: 240px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: 240px;
   }
 }

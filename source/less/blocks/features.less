@@ -42,3 +42,65 @@
   height: 35px;
   fill: #81b3d2;
 }
+
+@media (min-width: @tablet-width) {
+  .features {
+    margin-bottom: 0;
+  }
+
+  .features__list {
+    display: flex;
+  }
+
+  .features__item {
+    width: 256px;
+    padding: 158px 45px 60px;
+
+    box-sizing: border-box;
+  }
+
+  .features__icon {
+    top: 60px;
+    left: 90px;
+
+    width: 73px;
+    height: 73px;
+  }
+
+  .features__title {
+    margin-bottom: 20px;
+
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .features__text {
+    text-align: center;
+  }
+
+  .features__text span {
+    display: block;
+  }
+
+  .features__item--souvenirs {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__item {
+    width: 400px;
+    padding: 158px 50px 84px;
+  }
+
+  .features__icon {
+    position: absolute;
+    top: 60px;
+    left: 165px;
+  }
+
+  .features__text span {
+    display: inline;
+  }
+}
