@@ -16,10 +16,12 @@
 
 .card__image {
   display: block;
+  width: 280px;
+  height: 280px;
 }
 
 .card__info {
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 .card__name {
@@ -27,6 +29,7 @@
   margin: 0;
 
   font-family: "PT Sans Bold", "Arial", sans-serif;
+  text-transform: uppercase;
 }
 
 .card__icon {
@@ -34,9 +37,23 @@
 }
 
 .card__quantity {
+
+  margin-left: 10px;
+
   font-family: "PT Sans Bold", "Arial", sans-serif;
+
 }
 
 .card__like {
   padding-top: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    border: none;
+  }
+
+  .card:first-child {
+    border: none;
+  }
 }
