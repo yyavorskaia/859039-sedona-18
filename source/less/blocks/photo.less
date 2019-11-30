@@ -5,5 +5,22 @@
 }
 
 .photo__item {
-  padding: 20px;
+  padding: 22px 20px 16px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo__item {
+    width: 324px;
+
+    padding: 0;
+  }
+
+  .photo__item:first-child {
+    width: 100%;
+  }
 }
