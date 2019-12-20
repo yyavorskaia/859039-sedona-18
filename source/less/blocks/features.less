@@ -15,6 +15,16 @@
   padding: 16px 35px 11px 72px;
 }
 
+.features__icon {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  width: 38px;
+  height: 35px;
+  fill: #81b3d2;
+}
+
 .features__title {
   margin: 0;
   margin-bottom: 15px;
@@ -34,19 +44,10 @@
   text-transform: uppercase;
 }
 
-.features__icon {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-
-  width: 38px;
-  height: 35px;
-  fill: #81b3d2;
-}
-
 @media (min-width: @tablet-width) {
   .features {
     margin-bottom: 0;
+    padding: 0;
   }
 
   .features__list {
@@ -55,9 +56,13 @@
 
   .features__item {
     width: 256px;
-    padding: 158px 45px 60px;
+    padding: 158px 45px 63px;
 
     box-sizing: border-box;
+  }
+
+  .features__item--souvenirs {
+    order: 1;
   }
 
   .features__icon {
@@ -83,10 +88,6 @@
   .features__text span {
     display: block;
   }
-
-  .features__item--souvenirs {
-    order: 1;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -103,5 +104,9 @@
 
   .features__text span {
     display: inline;
+  }
+
+  .features__item--souvenirs .features__text span {
+    display: block;
   }
 }

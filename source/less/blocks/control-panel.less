@@ -1,44 +1,148 @@
 .control-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
   position: absolute;
   bottom: -66px;
   left: 20px;
-  display: flex;
-  flex-direction: column;
-
   width: 280px;
-  margin: 0 auto;
-
-  background-color: #514c4a;
 }
 
-.control-panel__progress-bar {
-  padding: 22px 0 21px 0;
-}
-
-.control-panel__range {
+.control-panel svg {
   display: block;
-  width: 235px;
-  height: 3px;
-  margin: 0 auto;
-  background-color: grey;
 }
 
-.control-panel__wrapper {
-  display: flex;
-  justify-content: flex-start;
-
-  width: 280px;
-  margin: 0 auto;
-  padding: 20px 0 20px 0;
+.control-panel__replay {
+  order: 1;
+  width: 140px;
+  padding: 23px 0 17px 23px;
+  box-sizing: border-box;
 
   background-color: #f2f2f2;
 }
 
-.control-panel__replay {
-  margin-left: 25px;
-  margin-right: 132px;
+.control-panel__progress-bar {
+  position: relative;
+
+  width: 280px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+.control-panel__range {
+
+  width: 240px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.control-panel__point {
+  position: absolute;
+  top: 19px;
+  left: 58px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .control-panel__subtitles {
-  margin-right: 30px;
+  order: 1;
+  width: 70px;
+  padding: 23px 0 23px 34px;
+  box-sizing: border-box;
+
+  background-color: #f2f2f2;
+}
+
+.control-panel__full-srceen {
+  order: 1;
+  width: 70px;
+  padding: 23px 0 23px 27px;
+  box-sizing: border-box;
+
+  background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .control-panel {
+    bottom: 0;
+    left: 60px;
+    width: 648px;
+    padding: 35px 0 35px 35px;
+    box-sizing: border-box;
+
+    background-color: #000000;
+    opacity: 0.7;
+  }
+
+  .control-panel svg {
+    fill: #ffffff;
+  }
+
+  .control-panel__replay {
+    order: 0;
+
+    width: 60px;
+    padding: 0;
+    background-color: inherit;
+  }
+
+  .control-panel__progress-bar {
+    width: 385px;
+    padding: 0;
+  }
+
+  .control-panel__range {
+    width: 385px;
+    margin-top: 10px;
+  }
+
+  .control-panel__point {
+    top: 7px;
+    left: 111px;
+  }
+
+  .control-panel__subtitles {
+    width: 90px;
+    background-color: inherit;
+    padding: 0;
+    padding-left: 45px;
+    box-sizing: border-box;
+  }
+
+  .control-panel__full-srceen {
+    width: 70px;
+    background-color: inherit;
+    padding: 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .control-panel {
+    width: 800px;
+    padding: 35px 0 40px 35px;
+  }
+
+  .control-panel__progress-bar {
+    width: 540px;
+    padding: 0;
+  }
+
+  .control-panel__range {
+    width: 540px;
+    margin-top: 10px;
+  }
+
+  .control-panel__point {
+    top: 7px;
+    left: 111px;
+  }
 }
