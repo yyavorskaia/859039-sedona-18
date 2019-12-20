@@ -19,3 +19,38 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    width: 648px;
+    padding: 0 60px;
+  }
+
+  .promo__title {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .promo__text {
+    padding: 65px 65px 75px 65px;
+  }
+
+  .promo__sentence {
+    width: 420px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  .promo__title {
+    margin-bottom: 35px;
+  }
+}

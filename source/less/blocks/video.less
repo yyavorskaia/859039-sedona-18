@@ -1,8 +1,39 @@
 .video {
-  position: relative;
   margin-bottom: 72px;
+}
+
+.video__wrapper {
+  position: relative;
 }
 
 .video__picture {
   display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    margin-bottom: 0;
+  }
+
+  .video__wrapper {
+    width: 648px;
+    padding: 0 60px;
+  }
+
+  .video__picture {
+    width: 648px;
+    height: 499px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__wrapper {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .video__picture {
+    width: 800px;
+    height: 499px;
+  }
 }
