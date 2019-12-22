@@ -20,10 +20,24 @@
   height: 48px;
 
   background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #5496bd;
+  }
 }
 
 .social__link svg {
   fill: #ffffff;
+
+  &:active,
+  &:focus {
+    fill: #88b6d1;
+  }
 }
 
 @media (min-width: @tablet-width) {
