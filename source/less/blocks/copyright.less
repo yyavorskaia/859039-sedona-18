@@ -19,13 +19,15 @@
   text-transform: uppercase;
 }
 
-.copyright__img {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 28px;
-  height: 35px;
-  fill: #666666;
+.copyright__link-logo svg {
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active,
+  &:focus {
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: @tablet-width) {

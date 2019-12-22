@@ -17,7 +17,19 @@
   text-transform: uppercase;
 
   border-bottom: 1px solid #678fa8;
-}
+
+  background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #5496bd;
+    color: #94b9d2;
+  }
+ }
 
 @media (min-width: @tablet-width) {
   .site-list {
@@ -40,6 +52,28 @@
     text-align: center;
 
     border: none;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active,
+    &:focus {
+      color: #cacaca;
+    }
+  }
+
+  .site-list__link--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active,
+    &:focus {
+      color: #dbd8d5;
+    }
   }
 }
 
