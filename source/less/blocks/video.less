@@ -10,6 +10,21 @@
   display: block;
 }
 
+.control-panel__replay svg,
+.control-panel__subtitles svg,
+.control-panel__full-srceen svg {
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active,
+  &:focus {
+    fill: #b8b8b8;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .video {
     margin-bottom: 0;
@@ -23,6 +38,21 @@
   .video__picture {
     width: 648px;
     height: 499px;
+  }
+
+  .control-panel__replay svg,
+  .control-panel__subtitles svg,
+  .control-panel__full-srceen svg {
+    fill: #ffffff;
+
+    &:hover {
+      fill: #c2c2c2;
+    }
+
+    &:active,
+    &:focus {
+      fill: #949494;
+    }
   }
 }
 

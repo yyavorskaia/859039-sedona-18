@@ -53,6 +53,7 @@
 }
 
 .feedback__item {
+  position: relative;
   display: flex;
 
   margin-bottom: 20px;
@@ -77,17 +78,6 @@
 .feedback__list--noteworthy .feedback__item {
   padding: 16px 0 16px 80px;
   margin-bottom: 22px;
-}
-
-.feedback__list--contacts .feedback__item::after {
-  content: "";
-  position: absolute;
-  top: 33px;
-  right: 0;
-  width: 56px;
-  height: 56px;
-
-  background-color: #e6e6e6;
 }
 
 .feedback__label {
@@ -135,7 +125,32 @@
   background-color: #f2f2f2;
 }
 
+.feedback__label--checkbox:hover::before,
+.feedback__label--radio:hover::before {
+  background-color: #e5e5e5;
+}
+
+.feedback__label--radio:active::before,
+.feedback__label--radio:focus::before,
+.feedback__label--checkbox:active::before,
+.feedback__label--checkbox:focus::before {
+  background-color: #d5d5d5;
+}
+
+.feedback__label--radio:active::after,
+.feedback__label--radio:focus::after,
+.feedback__label--checkbox:active::after,
+.feedback__label--checkbox:focus::after {
+  opacity: 0.3;
+}
+
+.feedback__input-checkbox:focus + label::before,
+.feedback__input-radio:focus + label::before {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
 .feedback__input-text {
+  position: relative;
   flex-grow: 1;
 
   padding: 16px 0 16px 20px;
@@ -151,8 +166,24 @@
   overflow: hidden;
 }
 
+.feedback__input-text:hover,
+.feedback__textarea:hover {
+  background-color: #e5e5e5;
+}
+
+.feedback__input-text:active,
+.feedback__input-text:focus,
+.feedback__textarea:active,
+.feedback__textarea:focus {
+  outline: thin;
+  border: 4px solid #e5e5e5;
+
+  background-color: #ffffff;
+}
+
 .feedback__input-text--phone,
 .feedback__input-text--email {
+  display: block;
   margin-bottom: 11px;
 }
 
@@ -170,6 +201,15 @@
 
   background-color: #f2f2f2;
   border: 0 none;
+}
+
+.feedback__container {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 56px;
+  height: 58px;
+  background-color: #e6e6e6;
 }
 
 .feedback__input-icon--phone {
@@ -444,7 +484,7 @@
     right: 0;
 
     width: 56px;
-    height: 56px;
+    height: 58px;
 
     background-color: #e6e6e6;
   }
@@ -474,7 +514,6 @@
   .feedback__list--noteworthy .feedback__item:last-child {
     margin-right: 0;
   }
-
 
   .feedback__fieldset--contacts .feedback__title {
     margin-bottom: 73px;
